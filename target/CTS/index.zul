@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    <window title="CTS Banking Dashboard" border="normal" width="400px" 
+            apply="org.zkoss.bind.BindComposer">
+
+        <vlayout spacing="10px">
+            
+            <label value="Welcome to Cheque Truncation System" 
+                   style="font-size:18px; font-weight:bold; color:#2c3e50"/>
+
+            <hlayout>
+                <label value="Enter Name:"/>
+                <textbox id="nameBox" width="200px"/>
+            </hlayout>
+
+            <button label="Click Me"
+                    onClick='alert("Hello, " + nameBox.value + "!")'/>
+
+        </vlayout>
+
+    </window>
+</zk>
