@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    <style src="/css/cheque.css" />
+
+    <vlayout id="chequeListRoot" spacing="16px">
+
+        <!-- Cheque Table -->
+        <div sclass="card table-card">
+            <listbox id="mc_chequeListbox" sclass="data-table" width="100%">
+                <listhead>
+                    <listheader label="ID"          width="60px"  />
+                    <listheader label="Payee Name"  hflex="1"     />
+                    <listheader label="Cheque No."  width="140px" />
+                    <listheader label="Amount (Rs.)" width="120px" />
+                    <listheader label="Bank"        hflex="1"     />
+                    <listheader label="Status"      width="110px" />
+                    <listheader label="Action"      width="130px" />
+                </listhead>
+            </listbox>
+        </div>
+
+        <!-- Detail / Validate Modal -->
+        <window id="mc_detailWindow" title="Cheque Details"
+            sclass="detail-modal" width="580px"
+            border="normal" closable="false" visible="false" position="center">
+            <vlayout spacing="14px" style="padding:18px;">
+
+                <div sclass="detail-grid">
+                    <label value="Payee Name:"  sclass="detail-label" /><label id="mc_dPayee"    sclass="detail-value" />
+                    <label value="Account No.:" sclass="detail-label" /><label id="mc_dAccount"  sclass="detail-value" />
+                    <label value="IFSC Code:"   sclass="detail-label" /><label id="mc_dIfsc"     sclass="detail-value" />
+                    <label value="Amount (Rs.):" sclass="detail-label" /><label id="mc_dAmount"  sclass="detail-value" />
+                    <label value="Bank Name:"   sclass="detail-label" /><label id="mc_dBank"     sclass="detail-value" />
+                    <label value="Cheque No.:"  sclass="detail-label" /><label id="mc_dChequeNo" sclass="detail-value" />
+                    <label value="Date:"        sclass="detail-label" /><label id="mc_dDate"     sclass="detail-value" />
+                    <label value="Status:"      sclass="detail-label" /><label id="mc_dStatus"   sclass="detail-value" />
+                </div>
+
+                <label id="mc_actionMsg" sclass="msg" />
+
+                <hlayout spacing="12px">
+                    <button id="mc_validateBtn"    label="Validate" sclass="app-btn app-btn-success"   />
+                    <button id="mc_rejectBtn"      label="Reject"   sclass="app-btn app-btn-danger"    />
+                    <button id="mc_closeDetailBtn" label="Close"    sclass="app-btn app-btn-secondary" />
+                </hlayout>
+
+            </vlayout>
+        </window>
+
+    </vlayout>
+</zk>

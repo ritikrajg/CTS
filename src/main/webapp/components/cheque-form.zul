@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    <style src="/css/cheque.css" />
+
+    <!--
+        cheque-form macro component
+        Renders the full cheque creation form.
+        Must be placed inside a container with width="100%" for full display.
+    -->
+    <div id="chequeFormRoot" sclass="form-card">
+        <vlayout spacing="20px">
+
+            <div sclass="form-row">
+                <vlayout spacing="4px">
+                    <label value="Payee Name *"  sclass="field-label" />
+                    <textbox id="mc_payeeName"   sclass="input-box" placeholder="Enter payee name" width="100%" />
+                </vlayout>
+                <vlayout spacing="4px">
+                    <label value="Bank Name *"   sclass="field-label" />
+                    <textbox id="mc_bankName"    sclass="input-box" placeholder="e.g. State Bank of India" width="100%" />
+                </vlayout>
+            </div>
+
+            <div sclass="form-row">
+                <vlayout spacing="4px">
+                    <label value="Account Number *"  sclass="field-label" />
+                    <textbox id="mc_accountNumber"   sclass="input-box" placeholder="Enter account number" width="100%" />
+                </vlayout>
+                <vlayout spacing="4px">
+                    <label value="IFSC Code *"  sclass="field-label" />
+                    <textbox id="mc_ifscCode"   sclass="input-box" placeholder="e.g. SBIN0001234" width="100%" />
+                </vlayout>
+            </div>
+
+            <div sclass="form-row">
+                <vlayout spacing="4px">
+                    <label value="Cheque Number *"  sclass="field-label" />
+                    <textbox id="mc_chequeNumber"   sclass="input-box" placeholder="6-digit cheque number" width="100%" />
+                </vlayout>
+                <vlayout spacing="4px">
+                    <label value="Amount (Rs.) *"  sclass="field-label" />
+                    <textbox id="mc_amount"        sclass="input-box" placeholder="e.g. 50000.00" width="100%" />
+                </vlayout>
+            </div>
+
+            <div sclass="form-row">
+                <vlayout spacing="4px">
+                    <label value="Cheque Date *"  sclass="field-label" />
+                    <datebox id="mc_chequeDate"   sclass="input-box" format="dd/MM/yyyy" width="100%" />
+                </vlayout>
+                <div />
+            </div>
+
+            <label id="mc_formMsg" sclass="msg" />
+
+            <hlayout spacing="12px">
+                <button id="mc_saveBtn"   label="Save &amp; Submit" sclass="app-btn app-btn-primary"   />
+                <button id="mc_cancelBtn" label="Cancel"            sclass="app-btn app-btn-secondary" />
+            </hlayout>
+
+        </vlayout>
+    </div>
+</zk>

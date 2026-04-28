@@ -9,7 +9,7 @@ public class Db {
     // 🔹 Change these as per your setup
     private static final String URL = "jdbc:postgresql://localhost:5432/cts";
     private static final String USER = "postgres";
-    private static final String PASSWORD = "Gupta@123";
+    private static final String PASSWORD = "root";
 
     // 🔹 Static block (loads driver once)
     static {
