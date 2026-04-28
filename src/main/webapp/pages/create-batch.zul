@@ -2,34 +2,36 @@
 <zk>
     <zscript>
         if (org.zkoss.zk.ui.Sessions.getCurrent().getAttribute("user") == null) {
-        org.zkoss.zk.ui.Executions.sendRedirect("/pages/login.zul");
-        return;
+            org.zkoss.zk.ui.Executions.sendRedirect("/pages/login.zul");
+            return;
         }
     </zscript>
+
     <?component name="appheader"
         macroURI="/components/header.zul"
         class="com.iispl.components.HeaderComponent"?>
+    <?component name="batchcreator"
+        macroURI="/components/batch-creator.zul"
+        class="com.iispl.components.BatchCreatorComponent"?>
+
     <style src="/css/dashboard.css" />
+    <style src="/css/cheque.css" />
+    <style src="/css/pages.css" />
 
     <appheader width="100%" />
-    <style src="/css/dashboard.css" />
 
-    <vlayout sclass="main-container" spacing="16px">
+    <vlayout sclass="main-container page-create-batch" spacing="16px">
+
         <vlayout sclass="page-head" spacing="0">
             <hlayout sclass="breadcrumb-link" style="cursor:pointer;"
-                onClick='Executions.sendRedirect("/pages/dashboard.zul")'>
-                <label value="&#x2190;" sclass="breadcrumb-arrow" style="cursor:pointer;" />
-                <label value="Dashboard" sclass="breadcrumb-text" style="cursor:pointer;" />
+                onClick='org.zkoss.zk.ui.Executions.sendRedirect("/pages/dashboard.zul")'>
+                <label value="&#x2190;" sclass="breadcrumb-arrow" />
+                <label value="Dashboard" sclass="breadcrumb-text" />
             </hlayout>
             <label value="Create Batch" sclass="page-title" />
         </vlayout>
-        <vlayout sclass="card"
-            style="max-width: 100%; min-height: 180px; padding: 24px; align-items: flex-start;">
-            <label value="This page is ready for batch creation features."
-                style="font-size: 18px; font-weight: 600;" />
-            <label
-                value="You can now build the batch flow incrementally without the navigation failing first."
-                style="font-size: 14px; color: #4b5563;" />
-        </vlayout>
+
+        <batchcreator />
+
     </vlayout>
 </zk>
