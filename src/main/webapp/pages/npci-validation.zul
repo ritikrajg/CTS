@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    <zscript>
+        if (org.zkoss.zk.ui.Sessions.getCurrent().getAttribute("user") == null) {
+        org.zkoss.zk.ui.Executions.sendRedirect("/pages/login.zul");
+        return;
+        }
+    </zscript>
+    <?component name="appheader"
+        macroURI="/components/header.zul"
+        class="com.iispl.components.HeaderComponent"?>
+    <style src="/css/dashboard.css" />
+
+    <appheader width="100%" />
+    <style src="/css/dashboard.css" />
+
+    <vlayout sclass="main-container" spacing="16px">
+        <vlayout sclass="page-head" spacing="0">
+            <hlayout sclass="breadcrumb-link" style="cursor:pointer;"
+                onClick='Executions.sendRedirect("/pages/dashboard.zul")'>
+                <label value="&#x2190;" sclass="breadcrumb-arrow" style="cursor:pointer;" />
+                <label value="Dashboard" sclass="breadcrumb-text" style="cursor:pointer;" />
+            </hlayout>
+            <label value="NPCI Validation" sclass="page-title" />
+        </vlayout>
+        <vlayout sclass="card"
+            style="max-width: 100%; min-height: 180px; padding: 24px; align-items: flex-start;">
+            <label value="This page is ready for NPCI validation features."
+                style="font-size: 18px; font-weight: 600;" />
+            <label
+                value="Navigation now resolves to a real page so the module can be implemented safely."
+                style="font-size: 14px; color: #4b5563;" />
+        </vlayout>
+    </vlayout>
+</zk>

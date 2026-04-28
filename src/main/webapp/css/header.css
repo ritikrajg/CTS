@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.app-header {
+    width: 100%;
+    background-color: #155dfc;
+    color: white;
+    padding: 16px;
+}
+
+/* REMOVE THIS IF EXISTS */
+/* .app-container { max-width: 1200px; } */
+
+.app-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header-user {
+    font-size: 14px;
+}
+
+.logout-btn {
+    background-color: #364153;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}

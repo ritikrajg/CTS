@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- This module was also published with a richer model, Gradle metadata,  -->
+  <!-- which should be used instead. Do not delete the following line which  -->
+  <!-- is to indicate to Gradle or any Gradle module metadata file consumer  -->
+  <!-- that they should prefer consuming it instead. -->
+  <!-- do_not_remove: published-with-gradle-metadata -->
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.zkoss.zk</groupId>
+  <artifactId>zkbind</artifactId>
+  <version>10.0.0-jakarta</version>
+  <name>ZK Bind</name>
+  <description>ZK Bind</description>
+  <url>https://www.zkoss.org/zkbind</url>
+  <licenses>
+    <license>
+      <name>GNU LESSER GENERAL PUBLIC LICENSE, Version 3</name>
+      <url>https://www.gnu.org/licenses/lgpl.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>zkteam</id>
+      <name>ZK Team</name>
+      <email>info@zkoss.org</email>
+      <url>https://www.zkoss.org</url>
+      <organization>Potix</organization>
+      <organizationUrl>https://www.zkoss.org</organizationUrl>
+      <roles>
+        <role>architect</role>
+        <role>developer</role>
+      </roles>
+      <timezone>8</timezone>
+      <properties>
+        <picUrl>https://www.zkoss.org</picUrl>
+      </properties>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:https://github.com/zkoss/zk.git</connection>
+    <url>https://mavensync.zkoss.org/maven2</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>org.zkoss.zk</groupId>
+      <artifactId>zul</artifactId>
+      <version>10.0.0-jakarta</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.zkoss.zk</groupId>
+      <artifactId>zhtml</artifactId>
+      <version>10.0.0-jakarta</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.javassist</groupId>
+      <artifactId>javassist</artifactId>
+      <version>3.29.2-GA</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>5.0.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>jakarta.validation</groupId>
+      <artifactId>jakarta.validation-api</artifactId>
+      <version>3.0.0</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+  <repositories>
+    <repository>
+      <id>ZK Repository</id>
+      <url>https://mavensync.zkoss.org/maven2</url>
+    </repository>
+  </repositories>
+</project>

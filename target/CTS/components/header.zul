@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    <style src="/css/header.css"/>
+
+    <div apply="com.iispl.controller.HeaderController" sclass="full-width-header app-header">
+        <div sclass="app-container header-content">
+            <div sclass="header-left">
+                <label id="titleLabel" sclass="app-title" value="Banking Cheque Processing System"/>
+            </div>
+
+            <div sclass="header-right">
+                <label id="userLabel" sclass="header-user" value="User"/>
+                <button id="logoutBtn" sclass="logout-btn" label="Logout"/>
+            </div>
+        </div>
+    </div>
+</zk>
