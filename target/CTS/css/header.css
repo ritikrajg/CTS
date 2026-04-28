@@ -1,0 +1,54 @@
+/* HEADER MAIN */
+.app-header {
+    background-color: #155dfc;   /* your blue color */
+    color: white;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* INNER CONTAINER */
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* FLEX LAYOUT */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* TITLE */
+.app-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* RIGHT SECTION (username + button) */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* USER TEXT */
+.header-user {
+    font-size: 14px;
+}
+
+/* LOGOUT BUTTON */
+.logout-btn {
+    background-color: #364153;  /* your button color */
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.logout-btn:hover {
+    opacity: 0.9;
+}

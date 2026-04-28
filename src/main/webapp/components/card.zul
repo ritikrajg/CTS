@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    <vlayout sclass="card" spacing="10px">
+        <div id="mc_icon"/>
+        <label id="mc_title" sclass="card-text"/>
+    </vlayout>
+</zk>

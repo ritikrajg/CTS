@@ -1,0 +1,130 @@
+/* ===== PAGE BACKGROUND ===== */
+.login-page {
+    background: #f3f4f6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== CENTER ALIGNMENT ===== */
+.center-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== LOGIN CARD ===== */
+.login-card {
+    width: 380px;
+    background: #ffffff;
+    padding: 22px 26px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* ===== MAIN TITLE ===== */
+.app-title {
+    display: block;
+    width: 100%;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 5px;
+}
+
+/* ===== LOGIN TEXT ===== */
+.login-subtitle {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+/* ===== FIELD LABELS ===== */
+.field-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 3px;
+}
+
+/* ===== INPUT BOX FIX (IMPORTANT FOR ZK) ===== */
+.input-box {
+    width: 100%;
+}
+
+/* ZK textbox internal styling */
+.input-box .z-input,
+.input-box .z-textbox {
+    height: 32px !important;
+    font-size: 13px;
+    padding: 4px 8px !important;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    box-sizing: border-box;
+}
+
+/* Focus effect */
+.input-box .z-input:focus,
+.input-box .z-textbox:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+/* ===== BUTTON ===== */
+.login-btn {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.login-btn,
+.login-btn.z-button {
+    display: block;
+    width: 100% !important;
+    box-sizing: border-box;
+    height: 36px;
+    background: #2563eb;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+}
+
+/* Hover effect */
+.login-btn:hover,
+.login-btn.z-button:hover {
+    background: #1d4ed8;
+}
+
+/* ===== INFO TEXT ===== */
+.info-text {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    color: #6b7280;
+    margin-top: 8px;
+}
+
+/* ===== ERROR MESSAGE ===== */
+.msg {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: red;
+    margin-top: 6px;
+}
+
+/* ===== SPACING FIX FOR ZK LAYOUT ===== */
+.z-vlayout > .z-vlayout-inner {
+    margin-bottom: 8px !important;
+}
+
+/* Remove extra last spacing */
+.z-vlayout > .z-vlayout-inner:last-child {
+    margin-bottom: 0 !important;
+}

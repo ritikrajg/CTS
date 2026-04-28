@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    <zscript>
+        if (org.zkoss.zk.ui.Sessions.getCurrent().getAttribute("user") == null) {
+        org.zkoss.zk.ui.Executions.sendRedirect("/pages/login.zul");
+        return;
+        }
+    </zscript>
+    <?component name="dashboardcard"
+    macroURI="/components/card.zul"
+    class="com.iispl.components.DashboardCard"?>
+    <?component name="appheader"
+        macroURI="/components/header.zul"
+        class="com.iispl.components.HeaderComponent"?>
+    <style src="/css/dashboard.css" />
+
+    <appheader width="100%" />
+    <vlayout sclass="main-container">
+        <label value="Dashboard" sclass="page-title" />
+
+        <div sclass="card-container">
+            <dashboardcard
+                iconClass="icon-create-cheque"
+                title="Create Cheque"
+                url="/pages/create-cheque.zul" />
+
+            <dashboardcard
+                iconClass="icon-validate-cheques"
+                title="Validate Cheques"
+                url="/pages/validate-cheque.zul" />
+
+            <dashboardcard
+                iconClass="icon-create-batch"
+                title="Create Batch"
+                url="/pages/create-batch.zul" />
+
+            <dashboardcard
+                iconClass="icon-npci-validation"
+                title="NPCI Validation"
+                url="/pages/npci-validation.zul" />
+
+            <dashboardcard
+                iconClass="icon-reports"
+                title="Reports"
+                url="/pages/reports.zul" />
+        </div>
+    </vlayout>
+</zk>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    <style src="/css/login.css" />
+
+    <window apply="com.iispl.controller.LoginController"
+        sclass="login-page"
+        width="100%" height="100%"
+        border="none">
+
+        <div sclass="center-container">
+
+            <vlayout sclass="login-card" spacing="15px">
+
+                <!-- Title -->
+                <label value="Banking Cheque System" sclass="app-title" />
+
+                <label value="Login" sclass="login-subtitle" />
+
+                <!-- Username -->
+                <vlayout spacing="3px">
+                    <label value="Username *" sclass="field-label" />
+                    <textbox id="username" sclass="input-box" />
+                </vlayout>
+
+                <!-- Password -->
+                <vlayout spacing="3px">
+                    <label value="Password *" sclass="field-label" />
+                    <textbox id="password" type="password" sclass="input-box" />
+                </vlayout>
+
+                <!-- Button -->
+                <button label="Login" id="loginBtn" sclass="login-btn" />
+
+                <!-- Info -->
+                <label value="Default credentials: admin / admin"
+                    sclass="info-text" />
+
+                <label id="msgLabel" sclass="msg" />
+
+            </vlayout>
+
+        </div>
+    </window>
+</zk>

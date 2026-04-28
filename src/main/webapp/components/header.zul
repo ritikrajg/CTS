@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    <style src="/css/header.css"/>
+
+    <!-- FULL WIDTH HEADER -->
+    <hbox width="100%" sclass="app-header" align="center">
+
+        <!-- LEFT -->
+        <hbox align="center">
+            <label id="titleLabel"
+                   sclass="app-title"
+                   value="Banking Cheque Processing System"/>
+        </hbox>
+
+        <!-- SPACER (THIS IS THE MAGIC) -->
+        <space hflex="1"/>
+
+        <!-- RIGHT -->
+        <hbox align="center" spacing="12px">
+            <label id="userLabel" sclass="header-user"/>
+            <button id="logoutBtn"
+                    sclass="logout-btn"
+                    label="Logout"/>
+        </hbox>
+
+    </hbox>
+</zk>
